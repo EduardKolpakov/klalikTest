@@ -1,0 +1,13 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="klalikTest.UserControl1">
+    <Grid>
+        <Button Click="LoginBtn_Click" Margin="0, 200, 0, 0" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Авторизоваться" Name="LoginBtn" Width="180" Height="40"/>
+        <Button  Margin="0, 290, 0, 0" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Зарегистрироваться" Name="RegBtn" Width="180" Height="40"/>
+        <TextBox Name="LoginTxt" Width="200" Height="40" Margin="0, -100, 0, 0" Text="Логин"/>
+        <TextBox Name="PassTxt" Width="200" Height="40" Margin="0, 0, 0, 0" Text="Password" PasswordChar="z"/>
+    </Grid>
+</UserControl>

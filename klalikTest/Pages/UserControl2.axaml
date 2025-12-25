@@ -1,0 +1,26 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:data="using:klalikTest.Data"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="klalikTest.UserControl2"
+             xmlns:local="clr-namespace:klalikTest"
+             x:DataType="local:UserControl2">
+         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Height="400">
+            <DataGrid x:Name="TovariList"
+                      ItemsSource="{Binding Tovari}"
+                      IsReadOnly="True"
+                      AutoGenerateColumns="False"
+                      Width="800">
+				<DataGrid.Columns>
+					<DataGridTextColumn Header="Id"
+                         Binding="{Binding Id}"/>
+					<DataGridTextColumn Header="Name"
+                         Binding="{Binding Name}"/>
+					<DataGridTextColumn Header="Quantity"
+                         Binding="{Binding Quantity}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+         </ScrollViewer>
+</UserControl>
