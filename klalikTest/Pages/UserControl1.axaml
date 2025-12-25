@@ -7,7 +7,7 @@
     <Grid>
         <Button Click="LoginBtn_Click" Margin="0, 200, 0, 0" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Авторизоваться" Name="LoginBtn" Width="180" Height="40"/>
         <Button  Margin="0, 290, 0, 0" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Зарегистрироваться" Name="RegBtn" Width="180" Height="40"/>
-        <TextBox Name="LoginTxt" Width="200" Height="40" Margin="0, -100, 0, 0" Text="Логин"/>
-        <TextBox Name="PassTxt" Width="200" Height="40" Margin="0, 0, 0, 0" Text="Password" PasswordChar="z"/>
+        <TextBox Name="LoginTxt" Width="200" Height="40" Margin="0, -100, 0, 0" Watermark="Логин"/>
+        <TextBox Name="PassTxt" Width="200" Height="40" Margin="0, 0, 0, 0" Watermark="Password" PasswordChar="z"/>
     </Grid>
 </UserControl>
